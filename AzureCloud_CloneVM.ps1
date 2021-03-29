@@ -1,7 +1,7 @@
 ####################### CREATE DISKS ########################
 
 #Enter name of the ResourceGroup in which you have the snapshots
-$resourceGroupName ='YOUR_VM_NAME'
+$resourceGroupName ='YOUR_RG_NAME'
 
 #Enter name of the snapshot that will be used to create Managed Disks
 $snapshotName = 'vm-os-c-disk'
