@@ -1,3 +1,4 @@
+# npx vsts-npm-auth -config .npmrc
 # NPM package count of source Azure DevOps Artifact Feed
 $npmPackageCount = <Your_NPM_packages_count>
 
