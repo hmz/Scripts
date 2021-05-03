@@ -20,5 +20,5 @@ foreach ($package in $packageList.value) {
     Invoke-RestMethod -Uri $packageUrl -Method GET -Headers @{ 'Authorization' = "Basic $token" } -OutFile $("C:\Temp\"+$package.name.ToString()+"-"+$package.versions[0].version+".tgz")
 }
 
-# Edit your .npmrc file to publish your packages to target Azure DevOps Artifact Feed
+# !!! Before this line edit your .npmrc file to publish your packages to target Azure DevOps Artifact Feed
 Get-ChildItem "C:\Temp" -Filter *.tgz | Foreach-Object { npm publish $_.FullName }
